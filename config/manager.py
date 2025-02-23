@@ -3,10 +3,13 @@ from pathlib import Path
 
 class ConfigManager:
     def __init__(self):
-        self.config_path = Path("config.json")
+        self.config_path = Path(".git/config.json")
         self._load_config()
         
     def _load_config(self):
+        if not self.config_path.exists():
+            raise FileNotFoundError(f"Config file not found at {self.config_path}")
+            
         with open(self.config_path) as f:
             config = json.load(f)
         self.email = config['email']

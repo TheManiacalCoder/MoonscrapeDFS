@@ -1,8 +1,8 @@
 {
-    "email": "sean@mediamasters.ca",
-    "api_key": "43dd9ffafc698610",
+    "email": "your_email@example.com",
+    "api_key": "your_dataforseo_api_key",
     "openrouter": {
-        "api_key": "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",
+        "api_key": "your_openrouter_api_key",
         "ai_model": "x-ai/grok-2-1212"
     }
-}
+} 
